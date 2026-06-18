@@ -6,6 +6,6 @@ services:
     region: oregon
     repo: https://github.com/hanryluo-LA/ai-supply-chain-dashboard
     branch: main
-    buildCommand: npm run render-build
+    buildCommand: npm ci && npm run build
     startCommand: npm start
     healthCheckPath: /api/health
