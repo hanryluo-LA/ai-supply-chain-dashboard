@@ -4,6 +4,8 @@ services:
     runtime: node
     plan: free
     region: oregon
+    repo: https://github.com/hanryluo-LA/ai-supply-chain-dashboard
+    branch: main
     buildCommand: npm ci && npm run build
     startCommand: npm start
     healthCheckPath: /api/health
