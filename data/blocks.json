@@ -1,5 +1,5 @@
 {
-  "asOf": "2025-06-01",
+  "asOf": "2025-06-17",
   "layers": [
     { "id": "A", "name": "上游", "description": "支撑芯片制造与设计" },
     { "id": "B", "name": "中游", "description": "AI 算力硬件与集群组件" },
@@ -93,8 +93,8 @@
       "name": "网络与光通信",
       "shortName": "网络",
       "description": "连接 AI 集群的 scale-out  fabric——以太网、InfiniBand、光模块与 DPU。",
-      "subComponents": ["以太网交换机", "InfiniBand", "光模块", "DPU/smartNIC"],
-      "competitionNotes": "Arista 领先 AI 以太网；英伟达拥有 InfiniBand；博通/美满在交换与 DPU 芯片上竞争。",
+      "subComponents": ["以太网交换机", "InfiniBand", "DPU/smartNIC", "网络 ASIC"],
+      "competitionNotes": "Arista 领先 AI 以太网；英伟达拥有 InfiniBand；博通/美满在交换与 DPU 芯片上竞争。光模块与光互联详见拓展板块 B7。",
       "overlooked": false
     },
     {
@@ -106,6 +106,63 @@
       "subComponents": ["AI 服务器机柜", "背板", "液冷集成", "ODM 平台"],
       "competitionNotes": "超微在 AI 服务器需求下增长最快；戴尔、HPE 凭企业客户关系竞争。",
       "overlooked": false
+    },
+    {
+      "id": "B7",
+      "layerId": "B",
+      "name": "光模块与光互联",
+      "shortName": "光模块",
+      "description": "AI 集群 scale-out 的带宽瓶颈环节。每台 GPU 服务器通过 800G/1.6T 光模块连接 Top-of-Rack 交换机，Leaf-Spine 架构下光端口数量随 GPU 数量线性乃至超线性增长。训练集群对低延迟、高带宽、低功耗的要求，正推动硅光（Silicon Photonics）、相干光 DSP 与 CPO（共封装光学）快速迭代——这是 GPU 叙事之外、与 AI CapEx 高度绑定的结构性受益环节。",
+      "subComponents": [
+        "800G/1.6T 以太网光模块",
+        "硅光芯片与光引擎",
+        "EML/CW 激光器与光芯片",
+        "相干光 DSP",
+        "有源光缆 AOC/AEC",
+        "CPO 共封装光学",
+        "光纤与 MPO 连接器"
+      ],
+      "subComponentDetails": [
+        {
+          "name": "800G/1.6T 以太网光模块",
+          "description": "AI 后端网络的主力形态。QSFP-DD / OSFP 封装，单通道 200G PAM4 信号，用于 GPU 服务器到交换机、以及 Leaf-Spine 互联。800G 已大规模部署，1.6T 处于导入期。",
+          "typicalVendors": ["COHR", "LITE", "AAOI"]
+        },
+        {
+          "name": "硅光芯片与光引擎",
+          "description": "将调制器、波导、耦合器集成在硅晶圆上，降低功耗与成本。CPO 与线性驱动可插拔（LPO）方案的核心技术路径。",
+          "typicalVendors": ["POET", "COHR", "LITE"]
+        },
+        {
+          "name": "EML/CW 激光器与光芯片",
+          "description": "光模块的上游核心器件——电吸收调制激光器（EML）、连续波（CW）光源、激光驱动芯片、跨阻放大器（TIA）。InP 晶圆产能是隐性瓶颈。",
+          "typicalVendors": ["LITE", "COHR", "MTSI"]
+        },
+        {
+          "name": "相干光 DSP",
+          "description": "用于 DCI（数据中心互联）与长距离传输的相干光模块，WaveLogic 等 DSP 芯片决定传输距离与频谱效率。",
+          "typicalVendors": ["CIEN", "COHR"]
+        },
+        {
+          "name": "有源光缆 AOC/AEC",
+          "description": "机柜内短距互联——AOC 为光纤，AEC 为铜缆+retimer。NVLink 机柜内用铜缆，机柜间仍以光为主。",
+          "typicalVendors": ["COHR", "LITE"]
+        },
+        {
+          "name": "CPO 共封装光学",
+          "description": "将光引擎与交换 ASIC 共封装，消除 PCB 走线损耗，是 1.6T+ 时代的演进方向。博通、Marvell、英伟达均在布局。",
+          "typicalVendors": ["AVGO", "MRVL", "NVDA"]
+        },
+        {
+          "name": "光纤与 MPO 连接器",
+          "description": "AI 数据中心光纤用量随端口数激增。Corning 等供应高密度光纤、MPO/MTP 连接器与光缆组件。",
+          "typicalVendors": ["GLW"]
+        }
+      ],
+      "competitionNotes": "第一梯队：Coherent 与 Lumentum 垂直整合（激光器+模块）；Applied Optoelectronics 专注超大规模 400G/800G 模块，弹性最大。Fabrinet 为多家品牌代工，受益行业总量而非品牌竞争。MACOM 供应 EML 驱动/TIA 等光芯片，是模块厂商的上游。Ciena 主导 DCI 相干光系统。硅光新势力 POET 体量小但代表技术路径变迁。非上市龙头 InnoLight（中际旭创）占全球数通模块份额领先，是评估美股标的时的关键参照。",
+      "supplyChainNotes": "产业链：InP 激光器晶圆 & 光芯片（MTSI、Lumentum）→ 模块设计/集成（COHR、LITE、AAOI）→ EMS 代工（FN）→ 交换机/服务器（ANET、NVDA、SMCI）→ 超大规模云（META、MSFT、AMZN）。测试环节 VIAV 提供产线检测与网络监测。",
+      "overlooked": false,
+      "expansionFocus": true
     },
     {
       "id": "C1",

@@ -1,5 +1,5 @@
 {
-  "asOf": "2025-06-01",
+  "asOf": "2025-06-17",
   "companies": [
     {
       "ticker": "ASML",
@@ -747,27 +747,34 @@
       "ticker": "COHR",
       "name": "Coherent Corp",
       "blockIds": [
-        "B5"
+        "B5",
+        "B7"
       ],
       "marketCapTier": "mid",
       "marketCapUSD_B": 12,
       "revenueTTM_USD_B": 5,
       "revenueSource": "FY2024 年报",
       "primaryProducts": [
-        "Optical transceivers",
-        "Laser components",
-        "800G optics"
+        "800G/1.6T optical transceivers",
+        "EML/CW lasers",
+        "Coherent DSP"
       ],
       "competitors": [
-        "LITE"
+        "LITE",
+        "AAOI",
+        "CIEN"
       ],
-      "upstream": [],
+      "upstream": [
+        "MTSI"
+      ],
       "downstream": [
         "ANET",
         "CSCO",
-        "NVDA"
+        "NVDA",
+        "META"
       ],
-      "moatNotes": "AI 集群 scale-out 的关键光互联供应商",
+      "moatNotes": "II-VI 并购 Coherent 后形成激光器+模块垂直整合，800G 数通模块核心供应商",
+      "segmentLabel": "模块 + 光器件垂直整合",
       "listingNote": "纽交所",
       "otcWarning": false
     },
@@ -775,27 +782,31 @@
       "ticker": "LITE",
       "name": "Lumentum Holdings",
       "blockIds": [
-        "B5"
+        "B5",
+        "B7"
       ],
       "marketCapTier": "mid",
       "marketCapUSD_B": 6,
       "revenueTTM_USD_B": 1.4,
       "revenueSource": "FY2024 年报",
       "primaryProducts": [
-        "Optical transceivers",
-        "Lasers",
-        "3D sensing"
+        "EML lasers",
+        "800G transceivers",
+        "Optical components"
       ],
       "competitors": [
-        "COHR"
+        "COHR",
+        "AAOI"
       ],
       "upstream": [],
       "downstream": [
         "ANET",
         "CSCO",
-        "NVDA"
+        "NVDA",
+        "FN"
       ],
-      "moatNotes": "数据中心互联的高速光组件",
+      "moatNotes": "EML 激光器产能是核心壁垒，收购 NeoPhotonics 强化相干光能力",
+      "segmentLabel": "激光器 + 光模块",
       "listingNote": "纳斯达克",
       "otcWarning": false
     },
@@ -1563,6 +1574,215 @@
       ],
       "moatNotes": "测试机与晶圆间的探针接口——小众但 essential",
       "listingNote": "纳斯达克",
+      "otcWarning": false
+    },
+    {
+      "ticker": "AAOI",
+      "name": "Applied Optoelectronics",
+      "blockIds": [
+        "B7"
+      ],
+      "marketCapTier": "small",
+      "marketCapUSD_B": 1.2,
+      "revenueTTM_USD_B": 0.22,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "400G/800G datacenter transceivers",
+        "Hyperscale optical modules"
+      ],
+      "competitors": [
+        "COHR",
+        "LITE"
+      ],
+      "upstream": [
+        "MTSI",
+        "LITE"
+      ],
+      "downstream": [
+        "META",
+        "MSFT",
+        "AMZN"
+      ],
+      "moatNotes": "纯数通光模块标的，客户高度集中于北美超大规模云，业绩对 AI CapEx 弹性极大",
+      "segmentLabel": "超大规模数通光模块",
+      "listingNote": "纳斯达克",
+      "otcWarning": false
+    },
+    {
+      "ticker": "FN",
+      "name": "Fabrinet",
+      "blockIds": [
+        "B7"
+      ],
+      "marketCapTier": "mid",
+      "marketCapUSD_B": 8,
+      "revenueTTM_USD_B": 2.6,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "Optical transceiver manufacturing",
+        "Precision optical assembly"
+      ],
+      "competitors": [],
+      "upstream": [],
+      "downstream": [
+        "COHR",
+        "LITE",
+        "AAOI",
+        "CIEN"
+      ],
+      "moatNotes": "光模块 EMS 龙头，为多家品牌代工——受益行业总量，竞争关系以合作为主",
+      "segmentLabel": "光模块代工制造",
+      "listingNote": "纽交所",
+      "otcWarning": false
+    },
+    {
+      "ticker": "MTSI",
+      "name": "MACOM Technology Solutions",
+      "blockIds": [
+        "B7"
+      ],
+      "marketCapTier": "mid",
+      "marketCapUSD_B": 7,
+      "revenueTTM_USD_B": 0.75,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "Laser drivers",
+        "TIAs",
+        "Optical semiconductors"
+      ],
+      "competitors": [
+        "AVGO"
+      ],
+      "upstream": [
+        "TSM"
+      ],
+      "downstream": [
+        "COHR",
+        "LITE",
+        "AAOI"
+      ],
+      "moatNotes": "光模块上游芯片——EML 驱动、TIA、跨阻放大器，是模块厂商的关键供应商",
+      "segmentLabel": "光芯片（激光器/驱动）",
+      "listingNote": "纳斯达克",
+      "otcWarning": false
+    },
+    {
+      "ticker": "VIAV",
+      "name": "Viavi Solutions",
+      "blockIds": [
+        "B7"
+      ],
+      "marketCapTier": "mid",
+      "marketCapUSD_B": 2.5,
+      "revenueTTM_USD_B": 0.85,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "Optical test instruments",
+        "OSP filters",
+        "Network monitoring"
+      ],
+      "competitors": [],
+      "upstream": [],
+      "downstream": [
+        "COHR",
+        "LITE",
+        "ANET",
+        "CSCO"
+      ],
+      "moatNotes": "光模块产线测试与网络监测设备——AI 集群扩容带来的隐性受益者",
+      "segmentLabel": "光器件测试与滤波",
+      "listingNote": "纳斯达克",
+      "otcWarning": false
+    },
+    {
+      "ticker": "POET",
+      "name": "POET Technologies",
+      "blockIds": [
+        "B7"
+      ],
+      "marketCapTier": "small",
+      "marketCapUSD_B": 0.2,
+      "revenueTTM_USD_B": 0.01,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "Silicon photonics optical engines",
+        "Optical interposer platform"
+      ],
+      "competitors": [
+        "COHR",
+        "LITE"
+      ],
+      "upstream": [
+        "TSM"
+      ],
+      "downstream": [
+        "COHR",
+        "LITE"
+      ],
+      "moatNotes": "硅光集成平台新势力，体量小但代表 CPO/LPO 技术路径，高风险高弹性",
+      "segmentLabel": "硅光集成平台",
+      "listingNote": "纳斯达克",
+      "otcWarning": false
+    },
+    {
+      "ticker": "GLW",
+      "name": "Corning",
+      "blockIds": [
+        "B7"
+      ],
+      "marketCapTier": "large",
+      "marketCapUSD_B": 45,
+      "revenueTTM_USD_B": 14,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "Optical fiber",
+        "MPO connectors",
+        "High-density cable assemblies"
+      ],
+      "competitors": [],
+      "upstream": [],
+      "downstream": [
+        "META",
+        "MSFT",
+        "EQIX",
+        "DLR"
+      ],
+      "moatNotes": "Meta 等签署长期光纤供应协议，AI 数据中心光纤用量随光端口数激增",
+      "segmentLabel": "光纤与连接器基建",
+      "listingNote": "纽交所",
+      "otcWarning": false
+    },
+    {
+      "ticker": "CIEN",
+      "name": "Ciena Corporation",
+      "blockIds": [
+        "B7"
+      ],
+      "marketCapTier": "mid",
+      "marketCapUSD_B": 8,
+      "revenueTTM_USD_B": 4,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "WaveLogic coherent optics",
+        "DCI transport systems",
+        "800G line systems"
+      ],
+      "competitors": [
+        "COHR",
+        "CSCO"
+      ],
+      "upstream": [
+        "FN"
+      ],
+      "downstream": [
+        "MSFT",
+        "GOOGL",
+        "AMZN",
+        "META"
+      ],
+      "moatNotes": "DCI 相干光传输系统龙头，WaveLogic DSP 是长距数据中心互联的核心",
+      "segmentLabel": "相干光传输系统",
+      "listingNote": "纽交所",
       "otcWarning": false
     }
   ]

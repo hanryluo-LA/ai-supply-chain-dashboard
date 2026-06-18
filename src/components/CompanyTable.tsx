@@ -6,11 +6,12 @@ interface CompanyTableProps {
   companies: Company[]
   getSummary: (ticker: string) => TickerSummary | undefined
   onCompanyClick: (ticker: string) => void
+  showSegment?: boolean
 }
 
 type SortKey = 'ticker' | 'return1Y' | 'returnYTD' | 'marketCap' | 'revenue'
 
-export function CompanyTable({ companies, getSummary, onCompanyClick }: CompanyTableProps) {
+export function CompanyTable({ companies, getSummary, onCompanyClick, showSegment }: CompanyTableProps) {
   const [sortKey, setSortKey] = useState<SortKey>('return1Y')
   const [sortAsc, setSortAsc] = useState(false)
 
@@ -84,6 +85,11 @@ export function CompanyTable({ companies, getSummary, onCompanyClick }: CompanyT
             {renderSortHeader('年初至今', 'returnYTD')}
             {renderSortHeader('市值', 'marketCap')}
             {renderSortHeader('营收', 'revenue')}
+            {showSegment && (
+              <th className="px-3 py-2 text-left text-xs font-medium uppercase tracking-wider text-zinc-500">
+                产业链角色
+              </th>
+            )}
             <th className="px-3 py-2 text-left text-xs font-medium uppercase tracking-wider text-zinc-500">
               状态
             </th>
@@ -112,6 +118,9 @@ export function CompanyTable({ companies, getSummary, onCompanyClick }: CompanyT
                 <td className="px-3 py-2.5 font-mono text-zinc-400">
                   {formatRevenue(c.revenueTTM_USD_B)}
                 </td>
+                {showSegment && (
+                  <td className="px-3 py-2.5 text-xs text-zinc-500">{c.segmentLabel ?? '—'}</td>
+                )}
                 <td className="px-3 py-2.5">
                   {c.otcWarning && (
                     <span className="rounded bg-amber-500/20 px-2 py-0.5 text-[10px] text-amber-400">

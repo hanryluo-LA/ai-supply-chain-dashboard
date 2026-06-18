@@ -51,9 +51,16 @@ export function BlockDetail({
         </div>
         <div className="flex flex-wrap items-start justify-between gap-4">
           <div>
-            <h1 className="text-2xl font-bold text-zinc-100">
-              {block.id} — {block.name}
-            </h1>
+            <div className="mb-2 flex flex-wrap items-center gap-2">
+              <h1 className="text-2xl font-bold text-zinc-100">
+                {block.id} — {block.name}
+              </h1>
+              {block.expansionFocus && (
+                <span className="rounded bg-violet-500/20 px-2 py-0.5 text-xs font-medium text-violet-300">
+                  拓展重点
+                </span>
+              )}
+            </div>
             <p className="mt-2 max-w-2xl text-sm leading-relaxed text-zinc-400">
               {block.description}
             </p>
@@ -78,18 +85,59 @@ export function BlockDetail({
       <div className="grid gap-6 lg:grid-cols-2">
         <div className="rounded-xl border border-zinc-800 bg-zinc-900/30 p-5">
           <h2 className="mb-3 text-sm font-semibold text-zinc-300">子组件</h2>
-          <ul className="space-y-2">
-            {block.subComponents.map((sc) => (
-              <li key={sc} className="flex items-center gap-2 text-sm text-zinc-400">
-                <span className="h-1.5 w-1.5 rounded-full" style={{ backgroundColor: layerColor }} />
-                {sc}
-              </li>
-            ))}
-          </ul>
+          {block.subComponentDetails && block.subComponentDetails.length > 0 ? (
+            <ul className="space-y-4">
+              {block.subComponentDetails.map((sc) => (
+                <li key={sc.name} className="border-b border-zinc-800/60 pb-4 last:border-0 last:pb-0">
+                  <div className="flex items-start gap-2">
+                    <span
+                      className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full"
+                      style={{ backgroundColor: layerColor }}
+                    />
+                    <div>
+                      <div className="text-sm font-medium text-zinc-200">{sc.name}</div>
+                      <p className="mt-1 text-xs leading-relaxed text-zinc-500">{sc.description}</p>
+                      {sc.typicalVendors && sc.typicalVendors.length > 0 && (
+                        <div className="mt-2 flex flex-wrap gap-1">
+                          {sc.typicalVendors.map((t) => (
+                            <button
+                              key={t}
+                              type="button"
+                              onClick={() => onCompanyClick(t)}
+                              className="rounded bg-zinc-800/80 px-1.5 py-0.5 font-mono text-[10px] text-cyan-500/80 transition hover:text-cyan-400"
+                            >
+                              {t}
+                            </button>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <ul className="space-y-2">
+              {block.subComponents.map((sc) => (
+                <li key={sc} className="flex items-center gap-2 text-sm text-zinc-400">
+                  <span className="h-1.5 w-1.5 rounded-full" style={{ backgroundColor: layerColor }} />
+                  {sc}
+                </li>
+              ))}
+            </ul>
+          )}
         </div>
-        <div className="rounded-xl border border-zinc-800 bg-zinc-900/30 p-5">
-          <h2 className="mb-3 text-sm font-semibold text-zinc-300">竞争格局</h2>
-          <p className="text-sm leading-relaxed text-zinc-400">{block.competitionNotes}</p>
+        <div className="space-y-6">
+          <div className="rounded-xl border border-zinc-800 bg-zinc-900/30 p-5">
+            <h2 className="mb-3 text-sm font-semibold text-zinc-300">竞争格局</h2>
+            <p className="text-sm leading-relaxed text-zinc-400">{block.competitionNotes}</p>
+          </div>
+          {block.supplyChainNotes && (
+            <div className="rounded-xl border border-violet-500/20 bg-violet-500/5 p-5">
+              <h2 className="mb-3 text-sm font-semibold text-violet-300">产业链位置</h2>
+              <p className="text-sm leading-relaxed text-zinc-400">{block.supplyChainNotes}</p>
+            </div>
+          )}
         </div>
       </div>
 
@@ -129,6 +177,7 @@ export function BlockDetail({
           companies={companies}
           getSummary={getSummary}
           onCompanyClick={onCompanyClick}
+          showSegment={block.expansionFocus}
         />
       </div>
     </div>

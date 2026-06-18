@@ -3,6 +3,7 @@ import { BlockHeatmap } from '../components/BlockHeatmap'
 import { LayerSwimlane } from '../components/LayerSwimlane'
 import { useMarketDataContext } from '../context/useMarketDataContext'
 import { formatReturn, returnColor } from '../utils/returns'
+import { TIER_LABELS } from '../utils/labels'
 import type { Block, BlockPerformance, Company, TickerSummary } from '../types'
 
 interface OverviewProps {
@@ -27,6 +28,7 @@ export function Overview({ onCompanyClick }: OverviewProps) {
   } = useMarketDataContext()
 
   const overlookedBlocks = blocks.filter((b) => b.overlooked)
+  const expansionBlocks = blocks.filter((b) => b.expansionFocus)
 
   const handleBlockClick = (blockId: string) => {
     navigate(`/block/${blockId}`)
@@ -112,6 +114,82 @@ export function Overview({ onCompanyClick }: OverviewProps) {
           onBlockClick={handleBlockClick}
         />
       </section>
+
+      {expansionBlocks.length > 0 && (
+        <section>
+          <h2 className="mb-4 text-sm font-semibold uppercase tracking-wider text-violet-400">
+            拓展重点 · 光模块
+          </h2>
+          <p className="mb-4 text-sm text-zinc-500">
+            AI 集群 scale-out 的带宽瓶颈——800G/1.6T 光模块、硅光、激光器芯片与 DCI 相干光。覆盖从上游光芯片到模块代工的全链条，含多家中小市值标的。
+          </p>
+          <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
+            {expansionBlocks.map((block) => {
+              const blockCompanies = companies.filter((c) => c.blockIds.includes(block.id))
+              const perf = blockPerformances.get(block.id)
+              const smallMid = blockCompanies.filter(
+                (c) => c.marketCapTier === 'small' || c.marketCapTier === 'mid',
+              )
+              return (
+                <div
+                  key={block.id}
+                  className="rounded-xl border border-violet-500/25 bg-violet-500/5 p-5"
+                >
+                  <button
+                    onClick={() => handleBlockClick(block.id)}
+                    className="w-full text-left"
+                  >
+                    <div className="flex items-center justify-between">
+                      <h3 className="text-lg font-semibold text-zinc-100">
+                        {block.id} — {block.name}
+                      </h3>
+                      <span
+                        className={`font-mono text-lg font-bold ${returnColor(perf?.medianReturn1Y)}`}
+                      >
+                        {formatReturn(perf?.medianReturn1Y)}
+                      </span>
+                    </div>
+                    <p className="mt-2 text-xs leading-relaxed text-zinc-500 line-clamp-3">
+                      {block.description}
+                    </p>
+                  </button>
+                  <div className="mt-4">
+                    <div className="mb-2 text-[10px] uppercase tracking-wider text-zinc-600">
+                      中小市值标的 ({smallMid.length})
+                    </div>
+                    <div className="flex flex-wrap gap-1.5">
+                      {smallMid.map((c) => {
+                        const s = getSummary(c.ticker)
+                        return (
+                          <button
+                            key={c.ticker}
+                            onClick={() => onCompanyClick(c.ticker)}
+                            className="rounded border border-zinc-700/80 bg-zinc-900/60 px-2 py-1 text-left transition hover:border-violet-500/40"
+                          >
+                            <span className="font-mono text-[10px] text-cyan-400">{c.ticker}</span>
+                            <span className="ml-1.5 text-[10px] text-zinc-500">
+                              {c.segmentLabel ?? TIER_LABELS[c.marketCapTier]}
+                            </span>
+                            <span className={`ml-1.5 font-mono text-[10px] ${returnColor(s?.return1Y)}`}>
+                              {formatReturn(s?.return1Y, 0)}
+                            </span>
+                          </button>
+                        )
+                      })}
+                    </div>
+                  </div>
+                  <button
+                    onClick={() => handleBlockClick(block.id)}
+                    className="mt-4 text-xs text-violet-400 transition hover:text-violet-300"
+                  >
+                    查看完整板块分析 →
+                  </button>
+                </div>
+              )
+            })}
+          </div>
+        </section>
+      )}
 
       <section>
         <h2 className="mb-4 text-sm font-semibold uppercase tracking-wider text-zinc-400">

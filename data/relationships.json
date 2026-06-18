@@ -1,5 +1,5 @@
 {
-  "asOf": "2025-06-01",
+  "asOf": "2025-06-17",
   "edges": [
     {
       "from": "ASML",
@@ -216,6 +216,96 @@
       "to": "CSCO",
       "type": "supplies",
       "label": "光模块"
+    },
+    {
+      "from": "MTSI",
+      "to": "COHR",
+      "type": "supplies",
+      "label": "激光驱动/TIA 芯片"
+    },
+    {
+      "from": "MTSI",
+      "to": "LITE",
+      "type": "supplies",
+      "label": "光芯片"
+    },
+    {
+      "from": "MTSI",
+      "to": "AAOI",
+      "type": "supplies",
+      "label": "光芯片"
+    },
+    {
+      "from": "FN",
+      "to": "COHR",
+      "type": "supplies",
+      "label": "光模块代工"
+    },
+    {
+      "from": "FN",
+      "to": "LITE",
+      "type": "supplies",
+      "label": "光模块代工"
+    },
+    {
+      "from": "FN",
+      "to": "AAOI",
+      "type": "supplies",
+      "label": "光模块代工"
+    },
+    {
+      "from": "AAOI",
+      "to": "META",
+      "type": "supplies",
+      "label": "800G 光模块"
+    },
+    {
+      "from": "AAOI",
+      "to": "MSFT",
+      "type": "supplies",
+      "label": "800G 光模块"
+    },
+    {
+      "from": "AAOI",
+      "to": "AMZN",
+      "type": "supplies",
+      "label": "数通光模块"
+    },
+    {
+      "from": "GLW",
+      "to": "META",
+      "type": "supplies",
+      "label": "光纤与连接器"
+    },
+    {
+      "from": "GLW",
+      "to": "EQIX",
+      "type": "supplies",
+      "label": "高密度光纤"
+    },
+    {
+      "from": "CIEN",
+      "to": "MSFT",
+      "type": "supplies",
+      "label": "DCI 相干光系统"
+    },
+    {
+      "from": "CIEN",
+      "to": "GOOGL",
+      "type": "supplies",
+      "label": "DCI 相干光系统"
+    },
+    {
+      "from": "VIAV",
+      "to": "COHR",
+      "type": "supplies",
+      "label": "光模块产线测试"
+    },
+    {
+      "from": "COHR",
+      "to": "META",
+      "type": "supplies",
+      "label": "800G 光模块"
     },
     {
       "from": "ANET",

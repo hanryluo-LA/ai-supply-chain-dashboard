@@ -6,6 +6,12 @@ export interface Layer {
   description: string
 }
 
+export interface SubComponentDetail {
+  name: string
+  description: string
+  typicalVendors?: string[]
+}
+
 export interface Block {
   id: string
   layerId: string
@@ -13,8 +19,11 @@ export interface Block {
   shortName: string
   description: string
   subComponents: string[]
+  subComponentDetails?: SubComponentDetail[]
   competitionNotes: string
+  supplyChainNotes?: string
   overlooked: boolean
+  expansionFocus?: boolean
 }
 
 export interface Company {
@@ -32,6 +41,8 @@ export interface Company {
   moatNotes: string
   listingNote: string
   otcWarning: boolean
+  /** 板块内产业链角色，如「光模块代工」——用于拓展板块表格展示 */
+  segmentLabel?: string
 }
 
 export interface RelationshipEdge {
