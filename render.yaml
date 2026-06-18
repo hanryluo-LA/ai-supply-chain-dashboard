@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: ai-supply-chain-dashboard
+    name: hanry-ai-supply-chain
     runtime: node
     plan: free
     region: oregon
