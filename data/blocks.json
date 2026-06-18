@@ -1,0 +1,171 @@
+{
+  "asOf": "2025-06-01",
+  "layers": [
+    { "id": "A", "name": "上游", "description": "支撑芯片制造与设计" },
+    { "id": "B", "name": "中游", "description": "AI 算力硬件与集群组件" },
+    { "id": "C", "name": "下游", "description": "AI 算力部署与消费" },
+    { "id": "D", "name": "易被忽视", "description": "结构上至关重要，但在 AI 叙事中常被低配" }
+  ],
+  "blocks": [
+    {
+      "id": "A1",
+      "layerId": "A",
+      "name": "半导体设备",
+      "shortName": "设备",
+      "description": "光刻、沉积、刻蚀与检测等设备，是先进制程晶圆厂的基础。",
+      "subComponents": ["EUV 光刻机", "CVD/ALD 沉积", "刻蚀设备", "晶圆检测"],
+      "competitionNotes": "ASML 垄断 EUV；AMAT/LRCX/KLAC 在沉积、刻蚀、量测领域竞争激烈，客户粘性高。",
+      "overlooked": false
+    },
+    {
+      "id": "A2",
+      "layerId": "A",
+      "name": "晶圆代工与 IDM",
+      "shortName": "代工",
+      "description": "先进制程与成熟制程的晶圆制造。",
+      "subComponents": ["先进节点（3nm/2nm）", "成熟制程", "后道集成"],
+      "competitionNotes": "台积电领先 AI 先进制程；英特尔、格芯在制程多样性与地缘供应链上竞争。",
+      "overlooked": false
+    },
+    {
+      "id": "A3",
+      "layerId": "A",
+      "name": "EDA 与 IP",
+      "shortName": "EDA/IP",
+      "description": "芯片设计工具链与可复用半导体 IP。",
+      "subComponents": ["RTL 综合", "验证", "CPU/GPU IP 授权"],
+      "competitionNotes": "新思、Cadence 主导 EDA；ARM 向几乎所有移动端及越来越多服务器设计授权 CPU 架构。",
+      "overlooked": true
+    },
+    {
+      "id": "A4",
+      "layerId": "A",
+      "name": "先进封装",
+      "shortName": "封装",
+      "description": "CoWoS、中介层与 OSAT 服务——AI GPU 出货的关键瓶颈。",
+      "subComponents": ["CoWoS", "HBM 堆叠", "2.5D/3D 封装", "OSAT 封测"],
+      "competitionNotes": "台积电 CoWoS 产能是硬约束；Amkor、ASE 在全球扩张先进封装。",
+      "overlooked": true
+    },
+    {
+      "id": "B1",
+      "layerId": "B",
+      "name": "GPU / AI 加速器",
+      "shortName": "GPU/AI",
+      "description": "训练与推理加速器——AI 资本开支的核心焦点。",
+      "subComponents": ["GPU 芯片", "Tensor Core", "NVLink", "定制 ASIC"],
+      "competitionNotes": "英伟达凭 CUDA 主导；AMD 以性价比/ROCm 挑战；博通为超大规模云厂商做定制 ASIC。",
+      "overlooked": false
+    },
+    {
+      "id": "B2",
+      "layerId": "B",
+      "name": "CPU 与主机算力",
+      "shortName": "CPU",
+      "description": "承载 AI 负载、编排集群的通用服务器 CPU。",
+      "subComponents": ["x86 服务器 CPU", "ARM 服务器 CPU", "Chiplet 架构"],
+      "competitionNotes": "AMD 与英特尔争夺数据中心 CPU；ARM IP 使云巨头可自研芯片。",
+      "overlooked": false
+    },
+    {
+      "id": "B3",
+      "layerId": "B",
+      "name": "内存（HBM/DRAM）",
+      "shortName": "内存",
+      "description": "高带宽内存与 DRAM——AI 训练的带宽瓶颈。",
+      "subComponents": ["HBM3e", "DDR5", "大宗 DRAM"],
+      "competitionNotes": "美光、三星、SK 海力士寡头垄断；HBM 供给制约 GPU 集群建设。",
+      "overlooked": false
+    },
+    {
+      "id": "B4",
+      "layerId": "B",
+      "name": "存储",
+      "shortName": "存储",
+      "description": "面向数据集、检查点与模型文件的企业级存储。",
+      "subComponents": ["NVMe 阵列", "对象存储", "近线 HDD", "全闪存阵列"],
+      "competitionNotes": "Pure Storage、NetApp 领先企业闪存；WDC/STX 提供大容量近线存储。",
+      "overlooked": false
+    },
+    {
+      "id": "B5",
+      "layerId": "B",
+      "name": "网络与光通信",
+      "shortName": "网络",
+      "description": "连接 AI 集群的 scale-out  fabric——以太网、InfiniBand、光模块与 DPU。",
+      "subComponents": ["以太网交换机", "InfiniBand", "光模块", "DPU/smartNIC"],
+      "competitionNotes": "Arista 领先 AI 以太网；英伟达拥有 InfiniBand；博通/美满在交换与 DPU 芯片上竞争。",
+      "overlooked": false
+    },
+    {
+      "id": "B6",
+      "layerId": "B",
+      "name": "服务器与系统集成",
+      "shortName": "服务器",
+      "description": "机架级 AI 服务器，集成 GPU、网络与散热。",
+      "subComponents": ["AI 服务器机柜", "背板", "液冷集成", "ODM 平台"],
+      "competitionNotes": "超微在 AI 服务器需求下增长最快；戴尔、HPE 凭企业客户关系竞争。",
+      "overlooked": false
+    },
+    {
+      "id": "C1",
+      "layerId": "C",
+      "name": "超大规模云",
+      "shortName": "超大规模云",
+      "description": "最大的 AI 资本开支方，自建训练与推理基础设施。",
+      "subComponents": ["训练集群", "推理 API", "自研芯片项目"],
+      "competitionNotes": "AWS、Azure、GCP 争夺企业 AI 负载；Meta、Oracle 大力投资内部 AI 基础设施。",
+      "overlooked": false
+    },
+    {
+      "id": "C2",
+      "layerId": "C",
+      "name": "NeoCloud / AI 原生数据中心",
+      "shortName": "NeoCloud",
+      "description": "以 GPU 为先的托管与云厂商，出租裸金属 AI 算力。",
+      "subComponents": ["GPU 租赁", "裸金属 AI 云", "HPC 托管"],
+      "competitionNotes": "NeoCloud 填补初创与实验室缺口；与超大规模云的 spot 实例在价格与可用性上竞争。",
+      "overlooked": false
+    },
+    {
+      "id": "C3",
+      "layerId": "C",
+      "name": "数据中心地产与物理基建",
+      "shortName": "DC 基建",
+      "description": "托管空间、配电与 AI 数据中心热管理。",
+      "subComponents": ["托管/ colo", "UPS/配电", "液冷", "PDU"],
+      "competitionNotes": "Equinix、Digital Realty 提供空间；Vertiv、Eaton 供应关键电力与散热基础设施。",
+      "overlooked": false
+    },
+    {
+      "id": "C4",
+      "layerId": "C",
+      "name": "AI 应用平台",
+      "shortName": "AI 软件",
+      "description": "下游消费 AI 算力的企业软件平台。",
+      "subComponents": ["企业 AI", "数据平台", "工作流自动化"],
+      "competitionNotes": "Palantir、Snowflake 在数据上 monetize AI；Salesforce、ServiceNow 将 AI 嵌入企业流程。",
+      "overlooked": false
+    },
+    {
+      "id": "D1",
+      "layerId": "D",
+      "name": "AI 数据中心电力",
+      "shortName": "电力",
+      "description": "受益于 AI 数据中心负荷激增的公用事业与电力基础设施。",
+      "subComponents": ["核电基荷", "电网互联", "现场发电"],
+      "competitionNotes": "Constellation、Vistra 受益于与 AI 园区建设相关的长期购电协议。",
+      "overlooked": true
+    },
+    {
+      "id": "D2",
+      "layerId": "D",
+      "name": "测试与量测",
+      "shortName": "测试",
+      "description": "芯片测试与探针设备——AI 硅片的上游质量关卡。",
+      "subComponents": ["自动测试设备 ATE", "探针卡", "良率分析"],
+      "competitionNotes": "Teradyne 主导 ATE；FormFactor 供应探针接口——热度低于 GPU，但与晶圆出货量绑定。",
+      "overlooked": true
+    }
+  ]
+}

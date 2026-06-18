@@ -1,0 +1,329 @@
+{
+  "asOf": "2025-06-01",
+  "edges": [
+    {
+      "from": "ASML",
+      "to": "TSM",
+      "type": "supplies",
+      "label": "EUV 设备"
+    },
+    {
+      "from": "ASML",
+      "to": "INTC",
+      "type": "supplies",
+      "label": "EUV 设备"
+    },
+    {
+      "from": "AMAT",
+      "to": "TSM",
+      "type": "supplies",
+      "label": "晶圆厂设备"
+    },
+    {
+      "from": "AMAT",
+      "to": "MU",
+      "type": "supplies",
+      "label": "晶圆厂设备"
+    },
+    {
+      "from": "LRCX",
+      "to": "TSM",
+      "type": "supplies",
+      "label": "刻蚀设备"
+    },
+    {
+      "from": "KLAC",
+      "to": "TSM",
+      "type": "supplies",
+      "label": "检测"
+    },
+    {
+      "from": "SNPS",
+      "to": "NVDA",
+      "type": "supplies",
+      "label": "EDA 工具"
+    },
+    {
+      "from": "SNPS",
+      "to": "AMD",
+      "type": "supplies",
+      "label": "EDA 工具"
+    },
+    {
+      "from": "CDNS",
+      "to": "NVDA",
+      "type": "supplies",
+      "label": "EDA 工具"
+    },
+    {
+      "from": "ARM",
+      "to": "NVDA",
+      "type": "supplies",
+      "label": "CPU IP"
+    },
+    {
+      "from": "ARM",
+      "to": "AMZN",
+      "type": "supplies",
+      "label": "Graviton IP"
+    },
+    {
+      "from": "TSM",
+      "to": "NVDA",
+      "type": "supplies",
+      "label": "GPU 晶圆"
+    },
+    {
+      "from": "TSM",
+      "to": "AMD",
+      "type": "supplies",
+      "label": "CPU/GPU 晶圆"
+    },
+    {
+      "from": "TSM",
+      "to": "AVGO",
+      "type": "supplies",
+      "label": "定制 ASIC 晶圆"
+    },
+    {
+      "from": "AMKR",
+      "to": "NVDA",
+      "type": "supplies",
+      "label": "封装"
+    },
+    {
+      "from": "ASX",
+      "to": "NVDA",
+      "type": "supplies",
+      "label": "封测 OSAT"
+    },
+    {
+      "from": "MU",
+      "to": "NVDA",
+      "type": "supplies",
+      "label": "HBM 内存"
+    },
+    {
+      "from": "MU",
+      "to": "AMD",
+      "type": "supplies",
+      "label": "HBM 内存"
+    },
+    {
+      "from": "HXSCF",
+      "to": "NVDA",
+      "type": "supplies",
+      "label": "HBM 内存"
+    },
+    {
+      "from": "SSNLF",
+      "to": "NVDA",
+      "type": "supplies",
+      "label": "HBM 内存"
+    },
+    {
+      "from": "NVDA",
+      "to": "SMCI",
+      "type": "supplies",
+      "label": "GPU 模组"
+    },
+    {
+      "from": "NVDA",
+      "to": "AMZN",
+      "type": "supplies",
+      "label": "GPU 集群"
+    },
+    {
+      "from": "NVDA",
+      "to": "MSFT",
+      "type": "supplies",
+      "label": "GPU 集群"
+    },
+    {
+      "from": "NVDA",
+      "to": "GOOGL",
+      "type": "supplies",
+      "label": "GPU 集群"
+    },
+    {
+      "from": "NVDA",
+      "to": "META",
+      "type": "supplies",
+      "label": "GPU 集群"
+    },
+    {
+      "from": "NVDA",
+      "to": "APLD",
+      "type": "supplies",
+      "label": "GPU 模组"
+    },
+    {
+      "from": "AMD",
+      "to": "SMCI",
+      "type": "supplies",
+      "label": "MI300 模组"
+    },
+    {
+      "from": "AMD",
+      "to": "MSFT",
+      "type": "supplies",
+      "label": "AI 加速器"
+    },
+    {
+      "from": "AVGO",
+      "to": "GOOGL",
+      "type": "supplies",
+      "label": "定制 TPU ASIC"
+    },
+    {
+      "from": "AVGO",
+      "to": "META",
+      "type": "supplies",
+      "label": "定制芯片"
+    },
+    {
+      "from": "AVGO",
+      "to": "ANET",
+      "type": "supplies",
+      "label": "交换芯片"
+    },
+    {
+      "from": "MRVL",
+      "to": "AMZN",
+      "type": "supplies",
+      "label": "DPU"
+    },
+    {
+      "from": "MRVL",
+      "to": "GOOGL",
+      "type": "supplies",
+      "label": "定制芯片"
+    },
+    {
+      "from": "COHR",
+      "to": "ANET",
+      "type": "supplies",
+      "label": "光模块"
+    },
+    {
+      "from": "COHR",
+      "to": "NVDA",
+      "type": "supplies",
+      "label": "光互联"
+    },
+    {
+      "from": "LITE",
+      "to": "CSCO",
+      "type": "supplies",
+      "label": "光模块"
+    },
+    {
+      "from": "ANET",
+      "to": "META",
+      "type": "supplies",
+      "label": "AI 以太网 fabric"
+    },
+    {
+      "from": "ANET",
+      "to": "MSFT",
+      "type": "supplies",
+      "label": "AI 以太网 fabric"
+    },
+    {
+      "from": "SMCI",
+      "to": "APLD",
+      "type": "supplies",
+      "label": "AI 服务器机柜"
+    },
+    {
+      "from": "SMCI",
+      "to": "CORZ",
+      "type": "supplies",
+      "label": "AI 服务器机柜"
+    },
+    {
+      "from": "VRT",
+      "to": "APLD",
+      "type": "supplies",
+      "label": "散热/电力"
+    },
+    {
+      "from": "VRT",
+      "to": "EQIX",
+      "type": "supplies",
+      "label": "热管理系统"
+    },
+    {
+      "from": "ETN",
+      "to": "DLR",
+      "type": "supplies",
+      "label": "电力基础设施"
+    },
+    {
+      "from": "CEG",
+      "to": "MSFT",
+      "type": "supplies",
+      "label": "核电购电协议"
+    },
+    {
+      "from": "CEG",
+      "to": "AMZN",
+      "type": "supplies",
+      "label": "清洁电力"
+    },
+    {
+      "from": "VST",
+      "to": "APLD",
+      "type": "supplies",
+      "label": "电网电力"
+    },
+    {
+      "from": "TER",
+      "to": "TSM",
+      "type": "supplies",
+      "label": "测试设备"
+    },
+    {
+      "from": "FORM",
+      "to": "TSM",
+      "type": "supplies",
+      "label": "探针卡"
+    },
+    {
+      "from": "WDC",
+      "to": "AMZN",
+      "type": "supplies",
+      "label": "近线存储"
+    },
+    {
+      "from": "PSTG",
+      "to": "NVDA",
+      "type": "supplies",
+      "label": "闪存"
+    },
+    {
+      "from": "AMZN",
+      "to": "PLTR",
+      "type": "supplies",
+      "label": "云计算"
+    },
+    {
+      "from": "MSFT",
+      "to": "PLTR",
+      "type": "supplies",
+      "label": "Azure compute"
+    },
+    {
+      "from": "MSFT",
+      "to": "SNOW",
+      "type": "supplies",
+      "label": "云计算"
+    },
+    {
+      "from": "GOOGL",
+      "to": "SNOW",
+      "type": "supplies",
+      "label": "GCP compute"
+    }
+  ]
+}

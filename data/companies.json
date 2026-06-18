@@ -1,0 +1,1569 @@
+{
+  "asOf": "2025-06-01",
+  "companies": [
+    {
+      "ticker": "ASML",
+      "name": "ASML Holding",
+      "blockIds": [
+        "A1"
+      ],
+      "marketCapTier": "mega",
+      "marketCapUSD_B": 350,
+      "revenueTTM_USD_B": 32,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "EUV lithography",
+        "DUV scanners"
+      ],
+      "competitors": [],
+      "upstream": [],
+      "downstream": [
+        "TSM",
+        "INTC",
+        "GFS"
+      ],
+      "moatNotes": "EUV 光刻垄断者——领先制程的唯一供应商",
+      "listingNote": "纳斯达克 ADR",
+      "otcWarning": false
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "blockIds": [
+        "A1"
+      ],
+      "marketCapTier": "large",
+      "marketCapUSD_B": 165,
+      "revenueTTM_USD_B": 27,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "Deposition",
+        "Etch",
+        "CMP"
+      ],
+      "competitors": [
+        "LRCX",
+        "KLAC"
+      ],
+      "upstream": [],
+      "downstream": [
+        "TSM",
+        "INTC",
+        "MU",
+        "NVDA"
+      ],
+      "moatNotes": "覆盖最广的晶圆厂设备组合",
+      "listingNote": "纳斯达克",
+      "otcWarning": false
+    },
+    {
+      "ticker": "LRCX",
+      "name": "Lam Research",
+      "blockIds": [
+        "A1"
+      ],
+      "marketCapTier": "large",
+      "marketCapUSD_B": 115,
+      "revenueTTM_USD_B": 16,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "Etch",
+        "Deposition",
+        "Clean"
+      ],
+      "competitors": [
+        "AMAT",
+        "KLAC"
+      ],
+      "upstream": [],
+      "downstream": [
+        "TSM",
+        "INTC",
+        "MU"
+      ],
+      "moatNotes": "先进存储与逻辑刻蚀领域领先",
+      "listingNote": "纳斯达克",
+      "otcWarning": false
+    },
+    {
+      "ticker": "KLAC",
+      "name": "KLA Corporation",
+      "blockIds": [
+        "A1"
+      ],
+      "marketCapTier": "large",
+      "marketCapUSD_B": 95,
+      "revenueTTM_USD_B": 10,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "Process control",
+        "Inspection",
+        "Metrology"
+      ],
+      "competitors": [
+        "AMAT"
+      ],
+      "upstream": [],
+      "downstream": [
+        "TSM",
+        "INTC",
+        "ASML"
+      ],
+      "moatNotes": "良率管理与检测领域 dominant",
+      "listingNote": "纳斯达克",
+      "otcWarning": false
+    },
+    {
+      "ticker": "TSM",
+      "name": "Taiwan Semiconductor",
+      "blockIds": [
+        "A2",
+        "A4"
+      ],
+      "marketCapTier": "mega",
+      "marketCapUSD_B": 900,
+      "revenueTTM_USD_B": 90,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "Advanced foundry",
+        "CoWoS packaging"
+      ],
+      "competitors": [
+        "INTC",
+        "GFS"
+      ],
+      "upstream": [
+        "ASML",
+        "AMAT",
+        "LRCX",
+        "KLAC"
+      ],
+      "downstream": [
+        "NVDA",
+        "AMD",
+        "AVGO",
+        "AAPL"
+      ],
+      "moatNotes": "领先代工 + CoWoS 封装，AI GPU 出货瓶颈",
+      "listingNote": "纽交所 ADR",
+      "otcWarning": false
+    },
+    {
+      "ticker": "GFS",
+      "name": "GlobalFoundries",
+      "blockIds": [
+        "A2"
+      ],
+      "marketCapTier": "mid",
+      "marketCapUSD_B": 25,
+      "revenueTTM_USD_B": 7,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "Mature-node foundry",
+        "Specialty silicon"
+      ],
+      "competitors": [
+        "TSM",
+        "INTC"
+      ],
+      "upstream": [
+        "AMAT",
+        "LRCX"
+      ],
+      "downstream": [
+        "AVGO",
+        "QCOM"
+      ],
+      "moatNotes": "美国/欧洲地缘上重要的成熟制程产能",
+      "listingNote": "纳斯达克",
+      "otcWarning": false
+    },
+    {
+      "ticker": "INTC",
+      "name": "Intel",
+      "blockIds": [
+        "A2",
+        "B1",
+        "B2"
+      ],
+      "marketCapTier": "large",
+      "marketCapUSD_B": 95,
+      "revenueTTM_USD_B": 53,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "Xeon CPUs",
+        "Gaudi AI accelerators",
+        "Foundry services"
+      ],
+      "competitors": [
+        "AMD",
+        "NVDA",
+        "TSM"
+      ],
+      "upstream": [
+        "ASML",
+        "AMAT"
+      ],
+      "downstream": [
+        "DELL",
+        "HPE",
+        "SMCI"
+      ],
+      "moatNotes": "IDM 转型代工；Gaudi 面向 AI 推理",
+      "listingNote": "纳斯达克",
+      "otcWarning": false
+    },
+    {
+      "ticker": "SNPS",
+      "name": "Synopsys",
+      "blockIds": [
+        "A3"
+      ],
+      "marketCapTier": "large",
+      "marketCapUSD_B": 85,
+      "revenueTTM_USD_B": 6,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "EDA tools",
+        "IP blocks",
+        "Verification"
+      ],
+      "competitors": [
+        "CDNS"
+      ],
+      "upstream": [],
+      "downstream": [
+        "NVDA",
+        "AMD",
+        "AVGO",
+        "TSM"
+      ],
+      "moatNotes": "与新思并列 EDA 双寡头，芯片设计必备",
+      "listingNote": "纳斯达克",
+      "otcWarning": false
+    },
+    {
+      "ticker": "CDNS",
+      "name": "Cadence Design Systems",
+      "blockIds": [
+        "A3"
+      ],
+      "marketCapTier": "large",
+      "marketCapUSD_B": 80,
+      "revenueTTM_USD_B": 4,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "EDA tools",
+        "Verification",
+        "System design"
+      ],
+      "competitors": [
+        "SNPS"
+      ],
+      "upstream": [],
+      "downstream": [
+        "NVDA",
+        "AMD",
+        "TSM"
+      ],
+      "moatNotes": "在模拟/混合信号与系统级设计方面强",
+      "listingNote": "纳斯达克",
+      "otcWarning": false
+    },
+    {
+      "ticker": "ARM",
+      "name": "Arm Holdings",
+      "blockIds": [
+        "A3",
+        "B2"
+      ],
+      "marketCapTier": "large",
+      "marketCapUSD_B": 145,
+      "revenueTTM_USD_B": 3,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "CPU IP licensing",
+        "Neoverse server cores"
+      ],
+      "competitors": [
+        "INTC",
+        "AMD"
+      ],
+      "upstream": [
+        "SNPS",
+        "CDNS"
+      ],
+      "downstream": [
+        "NVDA",
+        "AMZN",
+        "GOOGL",
+        "AAPL"
+      ],
+      "moatNotes": "架构授权模式——每颗 Arm 芯片收取版税",
+      "listingNote": "纳斯达克",
+      "otcWarning": false
+    },
+    {
+      "ticker": "AMKR",
+      "name": "Amkor Technology",
+      "blockIds": [
+        "A4"
+      ],
+      "marketCapTier": "mid",
+      "marketCapUSD_B": 8,
+      "revenueTTM_USD_B": 7,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "Advanced packaging",
+        "OSAT",
+        "2.5D/3D"
+      ],
+      "competitors": [
+        "ASX",
+        "TSM"
+      ],
+      "upstream": [
+        "TSM"
+      ],
+      "downstream": [
+        "NVDA",
+        "AMD",
+        "QCOM"
+      ],
+      "moatNotes": "主要 OSAT，在台积电以外扩张先进封装",
+      "listingNote": "纳斯达克",
+      "otcWarning": false
+    },
+    {
+      "ticker": "ASX",
+      "name": "ASE Technology",
+      "blockIds": [
+        "A4"
+      ],
+      "marketCapTier": "large",
+      "marketCapUSD_B": 22,
+      "revenueTTM_USD_B": 18,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "OSAT",
+        "SiP",
+        "Advanced packaging"
+      ],
+      "competitors": [
+        "AMKR",
+        "TSM"
+      ],
+      "upstream": [
+        "TSM"
+      ],
+      "downstream": [
+        "NVDA",
+        "AMD",
+        "AVGO"
+      ],
+      "moatNotes": "全球营收最大的 OSAT",
+      "listingNote": "纽交所 ADR",
+      "otcWarning": false
+    },
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA",
+      "blockIds": [
+        "B1",
+        "B5"
+      ],
+      "marketCapTier": "mega",
+      "marketCapUSD_B": 3300,
+      "revenueTTM_USD_B": 130,
+      "revenueSource": "FY2025 年报",
+      "primaryProducts": [
+        "H100/B200 GPUs",
+        "InfiniBand",
+        "CUDA",
+        "BlueField DPUs"
+      ],
+      "competitors": [
+        "AMD",
+        "AVGO",
+        "INTC"
+      ],
+      "upstream": [
+        "TSM",
+        "ASML",
+        "AMKR",
+        "MU"
+      ],
+      "downstream": [
+        "AMZN",
+        "MSFT",
+        "GOOGL",
+        "META",
+        "APLD"
+      ],
+      "moatNotes": "CUDA 生态 + 收购 Mellanox 后的全栈网络",
+      "listingNote": "纳斯达克",
+      "otcWarning": false
+    },
+    {
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices",
+      "blockIds": [
+        "B1",
+        "B2"
+      ],
+      "marketCapTier": "mega",
+      "marketCapUSD_B": 220,
+      "revenueTTM_USD_B": 26,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "MI300 AI accelerators",
+        "EPYC server CPUs",
+        "Instinct GPUs"
+      ],
+      "competitors": [
+        "NVDA",
+        "INTC"
+      ],
+      "upstream": [
+        "TSM",
+        "MU"
+      ],
+      "downstream": [
+        "SMCI",
+        "DELL",
+        "HPE",
+        "MSFT"
+      ],
+      "moatNotes": "英伟达性价比挑战者；EPYC 在 AI 主机服务器强",
+      "listingNote": "纳斯达克",
+      "otcWarning": false
+    },
+    {
+      "ticker": "AVGO",
+      "name": "Broadcom",
+      "blockIds": [
+        "B1",
+        "B5"
+      ],
+      "marketCapTier": "mega",
+      "marketCapUSD_B": 800,
+      "revenueTTM_USD_B": 52,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "Custom AI ASICs",
+        "Tomahawk switches",
+        "Networking silicon"
+      ],
+      "competitors": [
+        "NVDA",
+        "MRVL",
+        "ANET"
+      ],
+      "upstream": [
+        "TSM"
+      ],
+      "downstream": [
+        "GOOGL",
+        "META",
+        "AMZN"
+      ],
+      "moatNotes": "为超大规模云做定制 XPU；主导网络 ASIC",
+      "listingNote": "纳斯达克",
+      "otcWarning": false
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron Technology",
+      "blockIds": [
+        "B3"
+      ],
+      "marketCapTier": "large",
+      "marketCapUSD_B": 110,
+      "revenueTTM_USD_B": 25,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "HBM3e",
+        "DDR5",
+        "NAND flash"
+      ],
+      "competitors": [
+        "SSNLF",
+        "HXSCF"
+      ],
+      "upstream": [
+        "AMAT",
+        "LRCX"
+      ],
+      "downstream": [
+        "NVDA",
+        "AMD",
+        "SMCI"
+      ],
+      "moatNotes": "美国总部内存厂；HBM 产能快速扩张",
+      "listingNote": "纳斯达克",
+      "otcWarning": false
+    },
+    {
+      "ticker": "SSNLF",
+      "name": "Samsung Electronics",
+      "blockIds": [
+        "B3"
+      ],
+      "marketCapTier": "mega",
+      "marketCapUSD_B": 350,
+      "revenueTTM_USD_B": 200,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "HBM",
+        "DRAM",
+        "NAND",
+        "Foundry"
+      ],
+      "competitors": [
+        "MU",
+        "HXSCF"
+      ],
+      "upstream": [
+        "ASML",
+        "AMAT"
+      ],
+      "downstream": [
+        "NVDA",
+        "GOOGL",
+        "SMCI"
+      ],
+      "moatNotes": "内存寡头成员；同时在代工领域竞争",
+      "listingNote": "OTC 粉单",
+      "otcWarning": true
+    },
+    {
+      "ticker": "HXSCF",
+      "name": "SK Hynix",
+      "blockIds": [
+        "B3"
+      ],
+      "marketCapTier": "large",
+      "marketCapUSD_B": 90,
+      "revenueTTM_USD_B": 38,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "HBM3e",
+        "DRAM",
+        "NAND"
+      ],
+      "competitors": [
+        "MU",
+        "SSNLF"
+      ],
+      "upstream": [
+        "ASML",
+        "AMAT"
+      ],
+      "downstream": [
+        "NVDA",
+        "AMD"
+      ],
+      "moatNotes": "HBM 早期领先者；英伟达关键内存供应商",
+      "listingNote": "OTC 粉单",
+      "otcWarning": true
+    },
+    {
+      "ticker": "WDC",
+      "name": "Western Digital",
+      "blockIds": [
+        "B4"
+      ],
+      "marketCapTier": "mid",
+      "marketCapUSD_B": 22,
+      "revenueTTM_USD_B": 13,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "Nearline HDD",
+        "Enterprise SSD",
+        "Flash"
+      ],
+      "competitors": [
+        "STX",
+        "PSTG"
+      ],
+      "upstream": [],
+      "downstream": [
+        "AMZN",
+        "GOOGL",
+        "MSFT"
+      ],
+      "moatNotes": "AI 训练数据集的大容量存储",
+      "listingNote": "纳斯达克",
+      "otcWarning": false
+    },
+    {
+      "ticker": "STX",
+      "name": "Seagate Technology",
+      "blockIds": [
+        "B4"
+      ],
+      "marketCapTier": "mid",
+      "marketCapUSD_B": 25,
+      "revenueTTM_USD_B": 9,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "Nearline HDD",
+        "HAMR drives"
+      ],
+      "competitors": [
+        "WDC"
+      ],
+      "upstream": [],
+      "downstream": [
+        "AMZN",
+        "GOOGL",
+        "META"
+      ],
+      "moatNotes": "与 WDC 的 HDD 双寡头；AI 数据湖存储",
+      "listingNote": "纳斯达克",
+      "otcWarning": false
+    },
+    {
+      "ticker": "PSTG",
+      "name": "Pure Storage",
+      "blockIds": [
+        "B4"
+      ],
+      "marketCapTier": "mid",
+      "marketCapUSD_B": 18,
+      "revenueTTM_USD_B": 3,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "All-flash arrays",
+        "Object storage",
+        "AIRI"
+      ],
+      "competitors": [
+        "NTAP",
+        "DELL"
+      ],
+      "upstream": [],
+      "downstream": [
+        "AMZN",
+        "NVDA"
+      ],
+      "moatNotes": "闪存优先存储，优化 AI/ML 流水线",
+      "listingNote": "纽交所",
+      "otcWarning": false
+    },
+    {
+      "ticker": "NTAP",
+      "name": "NetApp",
+      "blockIds": [
+        "B4"
+      ],
+      "marketCapTier": "mid",
+      "marketCapUSD_B": 28,
+      "revenueTTM_USD_B": 6,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "Hybrid flash arrays",
+        "Cloud storage",
+        "Data management"
+      ],
+      "competitors": [
+        "PSTG",
+        "DELL"
+      ],
+      "upstream": [],
+      "downstream": [
+        "AMZN",
+        "MSFT",
+        "GOOGL"
+      ],
+      "moatNotes": "企业数据管理，深度云集成",
+      "listingNote": "纳斯达克",
+      "otcWarning": false
+    },
+    {
+      "ticker": "ANET",
+      "name": "Arista Networks",
+      "blockIds": [
+        "B5"
+      ],
+      "marketCapTier": "large",
+      "marketCapUSD_B": 115,
+      "revenueTTM_USD_B": 7,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "AI cluster Ethernet switches",
+        "Data-center routing"
+      ],
+      "competitors": [
+        "CSCO",
+        "AVGO"
+      ],
+      "upstream": [
+        "AVGO",
+        "MRVL"
+      ],
+      "downstream": [
+        "META",
+        "MSFT",
+        "NVDA"
+      ],
+      "moatNotes": "AI 后端以太网网络的事实标准",
+      "listingNote": "纽交所",
+      "otcWarning": false
+    },
+    {
+      "ticker": "CSCO",
+      "name": "Cisco Systems",
+      "blockIds": [
+        "B5"
+      ],
+      "marketCapTier": "large",
+      "marketCapUSD_B": 210,
+      "revenueTTM_USD_B": 54,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "Enterprise switches",
+        "Silicon One",
+        "Optical networking"
+      ],
+      "competitors": [
+        "ANET",
+        "AVGO"
+      ],
+      "upstream": [
+        "AVGO",
+        "MRVL"
+      ],
+      "downstream": [
+        "AMZN",
+        "ORCL",
+        "EQIX"
+      ],
+      "moatNotes": "企业网络 incumbent，进军 AI 数据中心 fabric",
+      "listingNote": "纳斯达克",
+      "otcWarning": false
+    },
+    {
+      "ticker": "COHR",
+      "name": "Coherent Corp",
+      "blockIds": [
+        "B5"
+      ],
+      "marketCapTier": "mid",
+      "marketCapUSD_B": 12,
+      "revenueTTM_USD_B": 5,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "Optical transceivers",
+        "Laser components",
+        "800G optics"
+      ],
+      "competitors": [
+        "LITE"
+      ],
+      "upstream": [],
+      "downstream": [
+        "ANET",
+        "CSCO",
+        "NVDA"
+      ],
+      "moatNotes": "AI 集群 scale-out 的关键光互联供应商",
+      "listingNote": "纽交所",
+      "otcWarning": false
+    },
+    {
+      "ticker": "LITE",
+      "name": "Lumentum Holdings",
+      "blockIds": [
+        "B5"
+      ],
+      "marketCapTier": "mid",
+      "marketCapUSD_B": 6,
+      "revenueTTM_USD_B": 1.4,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "Optical transceivers",
+        "Lasers",
+        "3D sensing"
+      ],
+      "competitors": [
+        "COHR"
+      ],
+      "upstream": [],
+      "downstream": [
+        "ANET",
+        "CSCO",
+        "NVDA"
+      ],
+      "moatNotes": "数据中心互联的高速光组件",
+      "listingNote": "纳斯达克",
+      "otcWarning": false
+    },
+    {
+      "ticker": "MRVL",
+      "name": "Marvell Technology",
+      "blockIds": [
+        "B5"
+      ],
+      "marketCapTier": "large",
+      "marketCapUSD_B": 75,
+      "revenueTTM_USD_B": 6,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "DPUs",
+        "Custom AI silicon",
+        "Switch ASICs",
+        "Storage controllers"
+      ],
+      "competitors": [
+        "AVGO",
+        "NVDA"
+      ],
+      "upstream": [
+        "TSM"
+      ],
+      "downstream": [
+        "AMZN",
+        "GOOGL",
+        "MSFT"
+      ],
+      "moatNotes": "DPU 与定制硅——从主机 CPU 卸载网络",
+      "listingNote": "纳斯达克",
+      "otcWarning": false
+    },
+    {
+      "ticker": "SMCI",
+      "name": "Super Micro Computer",
+      "blockIds": [
+        "B6"
+      ],
+      "marketCapTier": "large",
+      "marketCapUSD_B": 35,
+      "revenueTTM_USD_B": 15,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "AI server racks",
+        "GPU-dense systems",
+        "Liquid cooling"
+      ],
+      "competitors": [
+        "DELL",
+        "HPE"
+      ],
+      "upstream": [
+        "NVDA",
+        "AMD",
+        "INTC"
+      ],
+      "downstream": [
+        "APLD",
+        "AMZN",
+        "META"
+      ],
+      "moatNotes": "增长最快的 AI 服务器集成商；英伟达直接合作",
+      "listingNote": "纳斯达克",
+      "otcWarning": false
+    },
+    {
+      "ticker": "DELL",
+      "name": "Dell Technologies",
+      "blockIds": [
+        "B6",
+        "B4"
+      ],
+      "marketCapTier": "large",
+      "marketCapUSD_B": 85,
+      "revenueTTM_USD_B": 96,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "PowerEdge AI servers",
+        "Enterprise storage",
+        "VxRail"
+      ],
+      "competitors": [
+        "HPE",
+        "SMCI"
+      ],
+      "upstream": [
+        "NVDA",
+        "AMD",
+        "INTC"
+      ],
+      "downstream": [
+        "AMZN",
+        "ORCL",
+        "PLTR"
+      ],
+      "moatNotes": "AI 基础设施的企业渠道",
+      "listingNote": "纽交所",
+      "otcWarning": false
+    },
+    {
+      "ticker": "HPE",
+      "name": "Hewlett Packard Enterprise",
+      "blockIds": [
+        "B6"
+      ],
+      "marketCapTier": "large",
+      "marketCapUSD_B": 28,
+      "revenueTTM_USD_B": 30,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "ProLiant AI servers",
+        "Cray supercomputers",
+        "Aruba networking"
+      ],
+      "competitors": [
+        "DELL",
+        "SMCI"
+      ],
+      "upstream": [
+        "NVDA",
+        "AMD",
+        "INTC"
+      ],
+      "downstream": [
+        "ORCL",
+        "GOVT"
+      ],
+      "moatNotes": "HPC 基因；Cray 收购支撑大规模 AI 集群",
+      "listingNote": "纽交所",
+      "otcWarning": false
+    },
+    {
+      "ticker": "AMZN",
+      "name": "Amazon",
+      "blockIds": [
+        "C1"
+      ],
+      "marketCapTier": "mega",
+      "marketCapUSD_B": 2100,
+      "revenueTTM_USD_B": 638,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "AWS",
+        "Trainium/Inferentia chips",
+        "SageMaker"
+      ],
+      "competitors": [
+        "MSFT",
+        "GOOGL",
+        "ORCL"
+      ],
+      "upstream": [
+        "NVDA",
+        "AMD",
+        "AVGO",
+        "ANET"
+      ],
+      "downstream": [
+        "PLTR",
+        "SNOW"
+      ],
+      "moatNotes": "最大云 capex 支出方；自研 Trainium",
+      "listingNote": "纳斯达克",
+      "otcWarning": false
+    },
+    {
+      "ticker": "MSFT",
+      "name": "Microsoft",
+      "blockIds": [
+        "C1"
+      ],
+      "marketCapTier": "mega",
+      "marketCapUSD_B": 3300,
+      "revenueTTM_USD_B": 245,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "Azure",
+        "OpenAI partnership",
+        "Maia AI chips"
+      ],
+      "competitors": [
+        "AMZN",
+        "GOOGL",
+        "ORCL"
+      ],
+      "upstream": [
+        "NVDA",
+        "AMD",
+        "AVGO"
+      ],
+      "downstream": [
+        "PLTR",
+        "CRM",
+        "NOW"
+      ],
+      "moatNotes": "OpenAI 整合驱动 Azure AI 需求",
+      "listingNote": "纳斯达克",
+      "otcWarning": false
+    },
+    {
+      "ticker": "GOOGL",
+      "name": "Alphabet",
+      "blockIds": [
+        "C1"
+      ],
+      "marketCapTier": "mega",
+      "marketCapUSD_B": 2300,
+      "revenueTTM_USD_B": 350,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "Google Cloud",
+        "TPU accelerators",
+        "Gemini AI"
+      ],
+      "competitors": [
+        "AMZN",
+        "MSFT",
+        "META"
+      ],
+      "upstream": [
+        "NVDA",
+        "AVGO",
+        "TSM"
+      ],
+      "downstream": [
+        "SNOW",
+        "CRM"
+      ],
+      "moatNotes": "自研 TPU 降低对英伟达长期依赖",
+      "listingNote": "纳斯达克",
+      "otcWarning": false
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms",
+      "blockIds": [
+        "C1"
+      ],
+      "marketCapTier": "mega",
+      "marketCapUSD_B": 1500,
+      "revenueTTM_USD_B": 165,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "Internal AI infra",
+        "Llama models",
+        "MTIA chips"
+      ],
+      "competitors": [
+        "GOOGL",
+        "MSFT"
+      ],
+      "upstream": [
+        "NVDA",
+        "AMD",
+        "ANET"
+      ],
+      "downstream": [],
+      "moatNotes": "庞大内部 GPU  fleet，用于推荐与生成式 AI",
+      "listingNote": "纳斯达克",
+      "otcWarning": false
+    },
+    {
+      "ticker": "ORCL",
+      "name": "Oracle",
+      "blockIds": [
+        "C1"
+      ],
+      "marketCapTier": "mega",
+      "marketCapUSD_B": 450,
+      "revenueTTM_USD_B": 53,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "OCI cloud",
+        "AI database",
+        "Enterprise AI"
+      ],
+      "competitors": [
+        "AMZN",
+        "MSFT",
+        "GOOGL"
+      ],
+      "upstream": [
+        "NVDA",
+        "AMD"
+      ],
+      "downstream": [
+        "CRM",
+        "NOW"
+      ],
+      "moatNotes": "OCI GPU 云激进扩张；Stargate 合作",
+      "listingNote": "纽交所",
+      "otcWarning": false
+    },
+    {
+      "ticker": "APLD",
+      "name": "Applied Digital",
+      "blockIds": [
+        "C2"
+      ],
+      "marketCapTier": "small",
+      "marketCapUSD_B": 2,
+      "revenueTTM_USD_B": 0.15,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "GPU colocation",
+        "AI data centers",
+        "HPC hosting"
+      ],
+      "competitors": [
+        "CORZ",
+        "IREN"
+      ],
+      "upstream": [
+        "NVDA",
+        "SMCI",
+        "VRT"
+      ],
+      "downstream": [
+        "Private AI labs"
+      ],
+      "moatNotes": "纯 AI 数据中心建设商（北达科他等地）",
+      "listingNote": "纳斯达克",
+      "otcWarning": false
+    },
+    {
+      "ticker": "CORZ",
+      "name": "Core Scientific",
+      "blockIds": [
+        "C2"
+      ],
+      "marketCapTier": "small",
+      "marketCapUSD_B": 3,
+      "revenueTTM_USD_B": 0.5,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "GPU hosting",
+        "AI cloud",
+        "HPC infrastructure"
+      ],
+      "competitors": [
+        "APLD",
+        "IREN"
+      ],
+      "upstream": [
+        "NVDA",
+        "SMCI"
+      ],
+      "downstream": [
+        "Private AI labs"
+      ],
+      "moatNotes": "从挖矿 pivot 到 AI GPU 托管",
+      "listingNote": "纳斯达克",
+      "otcWarning": false
+    },
+    {
+      "ticker": "IREN",
+      "name": "IREN Limited",
+      "blockIds": [
+        "C2"
+      ],
+      "marketCapTier": "small",
+      "marketCapUSD_B": 2.5,
+      "revenueTTM_USD_B": 0.18,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "Renewable-powered AI data centers",
+        "GPU cloud"
+      ],
+      "competitors": [
+        "APLD",
+        "CORZ"
+      ],
+      "upstream": [
+        "NVDA",
+        "SMCI"
+      ],
+      "downstream": [
+        "Private AI labs"
+      ],
+      "moatNotes": "可再生能源驱动的 AI 数据中心",
+      "listingNote": "纳斯达克",
+      "otcWarning": false
+    },
+    {
+      "ticker": "NBIS",
+      "name": "Nebius Group",
+      "blockIds": [
+        "C2"
+      ],
+      "marketCapTier": "mid",
+      "marketCapUSD_B": 8,
+      "revenueTTM_USD_B": 0.12,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "GPU cloud",
+        "AI infrastructure",
+        "Toloka data"
+      ],
+      "competitors": [
+        "APLD",
+        "CORZ"
+      ],
+      "upstream": [
+        "NVDA"
+      ],
+      "downstream": [
+        "AI startups"
+      ],
+      "moatNotes": "Yandex 分拆，建设欧洲 GPU 云",
+      "listingNote": "纳斯达克",
+      "otcWarning": false
+    },
+    {
+      "ticker": "EQIX",
+      "name": "Equinix",
+      "blockIds": [
+        "C3"
+      ],
+      "marketCapTier": "large",
+      "marketCapUSD_B": 85,
+      "revenueTTM_USD_B": 8,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "Colocation",
+        "Interconnection",
+        "xScale hyperscale"
+      ],
+      "competitors": [
+        "DLR"
+      ],
+      "upstream": [
+        "VRT",
+        "ETN"
+      ],
+      "downstream": [
+        "AMZN",
+        "MSFT",
+        "GOOGL"
+      ],
+      "moatNotes": "全球互联枢纽——云区域交汇点",
+      "listingNote": "纳斯达克 REIT",
+      "otcWarning": false
+    },
+    {
+      "ticker": "DLR",
+      "name": "Digital Realty Trust",
+      "blockIds": [
+        "C3"
+      ],
+      "marketCapTier": "large",
+      "marketCapUSD_B": 55,
+      "revenueTTM_USD_B": 5,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "Hyperscale colocation",
+        "PlatformDIGITAL"
+      ],
+      "competitors": [
+        "EQIX"
+      ],
+      "upstream": [
+        "VRT",
+        "ETN"
+      ],
+      "downstream": [
+        "AMZN",
+        "META",
+        "ORCL"
+      ],
+      "moatNotes": "超大规模 campus 开发商，服务 AI 训练设施",
+      "listingNote": "纽交所 REIT",
+      "otcWarning": false
+    },
+    {
+      "ticker": "VRT",
+      "name": "Vertiv Holdings",
+      "blockIds": [
+        "C3"
+      ],
+      "marketCapTier": "large",
+      "marketCapUSD_B": 45,
+      "revenueTTM_USD_B": 7,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "Liquid cooling",
+        "Power distribution",
+        "Thermal management"
+      ],
+      "competitors": [
+        "ETN"
+      ],
+      "upstream": [],
+      "downstream": [
+        "EQIX",
+        "DLR",
+        "APLD",
+        "SMCI"
+      ],
+      "moatNotes": "AI 机架功率密度上升的 direct 受益者",
+      "listingNote": "纽交所",
+      "otcWarning": false
+    },
+    {
+      "ticker": "ETN",
+      "name": "Eaton Corporation",
+      "blockIds": [
+        "C3",
+        "D1"
+      ],
+      "marketCapTier": "large",
+      "marketCapUSD_B": 130,
+      "revenueTTM_USD_B": 24,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "UPS systems",
+        "Power distribution",
+        "Electrical infrastructure"
+      ],
+      "competitors": [
+        "VRT"
+      ],
+      "upstream": [],
+      "downstream": [
+        "EQIX",
+        "DLR",
+        "APLD"
+      ],
+      "moatNotes": "高密度 AI 数据中心的电气基础设施",
+      "listingNote": "纽交所",
+      "otcWarning": false
+    },
+    {
+      "ticker": "PLTR",
+      "name": "Palantir Technologies",
+      "blockIds": [
+        "C4"
+      ],
+      "marketCapTier": "large",
+      "marketCapUSD_B": 75,
+      "revenueTTM_USD_B": 2.9,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "AIP platform",
+        "Gotham",
+        "Foundry"
+      ],
+      "competitors": [
+        "SNOW",
+        "CRM"
+      ],
+      "upstream": [
+        "AMZN",
+        "MSFT",
+        "GOOGL"
+      ],
+      "downstream": [
+        "GOVT",
+        "Enterprise"
+      ],
+      "moatNotes": "消耗云 GPU 的 AI 平台层",
+      "listingNote": "纽交所",
+      "otcWarning": false
+    },
+    {
+      "ticker": "SNOW",
+      "name": "Snowflake",
+      "blockIds": [
+        "C4"
+      ],
+      "marketCapTier": "large",
+      "marketCapUSD_B": 55,
+      "revenueTTM_USD_B": 3.5,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "Data cloud",
+        "Cortex AI",
+        "Data warehousing"
+      ],
+      "competitors": [
+        "PLTR",
+        "CRM"
+      ],
+      "upstream": [
+        "AMZN",
+        "MSFT",
+        "GOOGL"
+      ],
+      "downstream": [
+        "Enterprise"
+      ],
+      "moatNotes": "数据云 + 原生 AI/ML 函数",
+      "listingNote": "纽交所",
+      "otcWarning": false
+    },
+    {
+      "ticker": "CRM",
+      "name": "Salesforce",
+      "blockIds": [
+        "C4"
+      ],
+      "marketCapTier": "mega",
+      "marketCapUSD_B": 280,
+      "revenueTTM_USD_B": 38,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "Einstein AI",
+        "Agentforce",
+        "CRM platform"
+      ],
+      "competitors": [
+        "NOW",
+        "MSFT"
+      ],
+      "upstream": [
+        "AMZN",
+        "GOOGL"
+      ],
+      "downstream": [
+        "Enterprise"
+      ],
+      "moatNotes": "AI Agent 嵌入 CRM 工作流",
+      "listingNote": "纽交所",
+      "otcWarning": false
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "blockIds": [
+        "C4"
+      ],
+      "marketCapTier": "large",
+      "marketCapUSD_B": 180,
+      "revenueTTM_USD_B": 11,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "Now Platform",
+        "Generative AI workflows",
+        "ITSM"
+      ],
+      "competitors": [
+        "CRM",
+        "MSFT"
+      ],
+      "upstream": [
+        "AMZN",
+        "MSFT"
+      ],
+      "downstream": [
+        "Enterprise"
+      ],
+      "moatNotes": "工作流自动化平台整合 GenAI",
+      "listingNote": "纽交所",
+      "otcWarning": false
+    },
+    {
+      "ticker": "CEG",
+      "name": "Constellation Energy",
+      "blockIds": [
+        "D1"
+      ],
+      "marketCapTier": "large",
+      "marketCapUSD_B": 85,
+      "revenueTTM_USD_B": 24,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "Nuclear power",
+        "Baseload generation",
+        "Clean energy credits"
+      ],
+      "competitors": [
+        "VST"
+      ],
+      "upstream": [],
+      "downstream": [
+        "MSFT",
+        "AMZN",
+        "EQIX"
+      ],
+      "moatNotes": "核电基荷支撑 7×24 AI 数据中心；与微软 PPA",
+      "listingNote": "纳斯达克",
+      "otcWarning": false
+    },
+    {
+      "ticker": "VST",
+      "name": "Vistra Corp",
+      "blockIds": [
+        "D1"
+      ],
+      "marketCapTier": "large",
+      "marketCapUSD_B": 55,
+      "revenueTTM_USD_B": 15,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "Power generation",
+        "Retail electricity",
+        "Nuclear/gas mix"
+      ],
+      "competitors": [
+        "CEG"
+      ],
+      "upstream": [],
+      "downstream": [
+        "APLD",
+        "CORZ",
+        "DLR"
+      ],
+      "moatNotes": "德州电力市场暴露于 AI 数据中心负荷增长",
+      "listingNote": "纽交所",
+      "otcWarning": false
+    },
+    {
+      "ticker": "TER",
+      "name": "Teradyne",
+      "blockIds": [
+        "D2"
+      ],
+      "marketCapTier": "mid",
+      "marketCapUSD_B": 22,
+      "revenueTTM_USD_B": 2.8,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "Automated test equipment",
+        "Semiconductor testers",
+        "Robotics"
+      ],
+      "competitors": [
+        "FORM"
+      ],
+      "upstream": [],
+      "downstream": [
+        "TSM",
+        "INTC",
+        "NVDA"
+      ],
+      "moatNotes": "ATE 龙头——测试量随 AI 芯片产量扩展",
+      "listingNote": "纳斯达克",
+      "otcWarning": false
+    },
+    {
+      "ticker": "FORM",
+      "name": "FormFactor",
+      "blockIds": [
+        "D2"
+      ],
+      "marketCapTier": "small",
+      "marketCapUSD_B": 5,
+      "revenueTTM_USD_B": 0.7,
+      "revenueSource": "FY2024 年报",
+      "primaryProducts": [
+        "Probe cards",
+        "Engineering probes",
+        "Analytics"
+      ],
+      "competitors": [
+        "TER"
+      ],
+      "upstream": [],
+      "downstream": [
+        "TSM",
+        "MU",
+        "NVDA"
+      ],
+      "moatNotes": "测试机与晶圆间的探针接口——小众但 essential",
+      "listingNote": "纳斯达克",
+      "otcWarning": false
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "asOf": "2025-06-01",
+  "benchmarks": [
+    {
+      "ticker": "SPY",
+      "name": "标普 500 ETF",
+      "description": "美国整体股市基准"
+    },
+    {
+      "ticker": "QQQ",
+      "name": "纳斯达克 100 ETF",
+      "description": "大盘成长 / 科技权重基准"
+    },
+    {
+      "ticker": "SOXX",
+      "name": "半导体 ETF",
+      "description": "半导体行业 proxy（SOX 指数）"
+    }
+  ]
+}
